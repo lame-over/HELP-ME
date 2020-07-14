@@ -1,20 +1,15 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<meta charset="UTF-8">
 
         <title>Logo</title>
-        <style>
-	    h1 {
-	        font-family: Do Hyeon, sans-serif;
-	    }
-	    h2 {
-	        font-family: Press Start 2P, cursive;
-	    }
-	    h3 {
-	        font-family: Do Hyeon, sans-serif;
-	    }
-	    </style>
-	    <link rel="stylesheet" href="{{url_for('static',filename='css/XD.css')}}">
+
+        <link rel="stylesheet" href="../static/css/XD.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"> 
+	    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
 </head>
+<body>
 <h1>Hi game is over</h1>
 <br> <a href="http://127.0.0.1:5000/game"><h1>Home</h1></a>
 
@@ -26,7 +21,10 @@
 
 <br>visual studio: {{ bot }}
 
-
-
 <div id="line"></div>
-<h3>Sponsered by potato pc</h3>
+
+<h3 class="sponsered" >Sponsered by potato pc</h3>
+
+<script type="text/javascript" src="../static/js/script.js"></script>
+</body>
+</html>

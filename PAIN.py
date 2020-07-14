@@ -43,18 +43,14 @@ def rule():
 
 app.route('/game/<name>')
 def hello(name):
-    user_exist = False
     for user in scoreboard:
-        if user['name'] == name:
-            user_exist = True
-            user['choose'] == choose
-            
-    if not user_exist:
+        user['name'] == name
+        user['choose'] == None
         scoreboard.append({"name": name, "choose": none})
     
-    return render_template('list.html')
+    return render_template('list.html', scoreboard=scoreboard)
 
-#@app.route("/game/<name>/<choose>")
+#@app.route("/game/<choose>")
 #def end(choose):
 #    player_choice = choose.lower()
 #    bot = bot_r()

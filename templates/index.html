@@ -1,34 +1,26 @@
 <!DOCTYPE HTML>
-
 <html>
-
     <head>
 
         <meta charset="UTF-8">
 
         <title>Logo</title>
-        <style>
-	    h1 {
-	        font-family: Do Hyeon, sans-serif;
-	    }
-	    h2 {
-	        font-family: Press Start 2P, cursive;
-	    }
-	    h3 {
-	        font-family: Do Hyeon, sans-serif;
-	    }
-	    </style>
-	    <link rel="stylesheet" href="{{url_for('static',filename='css/XD.css')}}">
+	    <link rel="stylesheet" href="../static/css/XD.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"> 
+	    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
 </head>
 <body>
+	<button id="button" onclick="myFunction();">Up</button>
 	<h1><p align="center">Game start</h1></p>
+	<br><h1><a href="http://127.0.0.1:5000/rules">Rules</h1></a>
 	<div id="line"></div>
-	<h3>To start game you need write 127.0.0.1:5000/game/'your choice'
-		<br> You can see what you can choose from image</h3>
-	<img src={{ url_for('static', filename='4.jpg') }} height="300"></img>
-	<div id="line"></div>
-	<h3>Sponsered by potato pc</h3>
+	<h2>To start game you need write 127.0.0.1:5000/game/'your name'
+		<br> You can see what you can choose on page rules</h2>
+	<!--<img src={{ url_for('static', filename='4.jpg') }} height="300"></img>-->
+	<div class="block"></div>
+	<h3 class="sponsered" >Sponsered by potato pc</h3>
 
+
+<script type="text/javascript" src="../static/js/script.js"></script>
 </body>
-
 </html>
