@@ -7,6 +7,33 @@ img{
   background-repeat: no-repeat;
   width:100%;
   height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+h1 {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.block{
+	background-repeat: no-repeat;
+  	width:100%;
+	  height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../4.jpg);
+  margin-top: 500px;
+}
+
+.sponsered {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 #line{
@@ -15,3 +42,25 @@ img{
   height: 50px;  
 }
 
+#button{
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background-color: #000;
+	border-radius: 5px;
+	padding: 10px 20px;
+	outline: none;
+	transition: .3s;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+#button:hover{
+	background-color: gray;
+	transition: .3s;
+	color: #000;
+}
