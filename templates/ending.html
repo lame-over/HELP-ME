@@ -10,16 +10,22 @@
 	    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
 </head>
 <body>
+	<button id="button" onclick="myFunction();">Up</button>
 <h1>Hi game is over</h1>
-<br> <a href="http://127.0.0.1:5000/game"><h1>Home</h1></a>
+<br> <a href="http://127.0.0.1:5000/game" class="text"><h1>Home</h1></a>
 
 <div id='line'></div>
-<img src={{ url_for('static', filename='3.jpg') }} height="300"></img>
-<br>Winner: {{ winner }}
+{%if winner == 'YOU LOSE! ;-;' %}
+<img src={{ url_for('static', filename='6.jpg') }} height="300"></img>
+{%elif winner == 'YOU WIN!'%}
+<img src="../static/5.jpg">
+{%else%}
+{%endif%}
+<h3 class="sponsered" ><br>Winner: {{ winner }}
 
 <br>sublime text 3: {{ player_choice }}
 
-<br>visual studio: {{ bot }}
+<br>visual studio: {{ bot }}</h3>
 
 <div id="line"></div>
 

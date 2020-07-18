@@ -5,8 +5,8 @@ body{
 
 img{
   background-repeat: no-repeat;
-  width:60%;
-  height: 60%;
+  width:100%;
+  height:100%;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -18,9 +18,9 @@ h1 {
 }
 
 .block{
-	background-repeat: no-repeat;
-  	width:100%;
-	  height: 600px;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 600px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -29,8 +29,8 @@ h1 {
 
 .block1{
   background-repeat: no-repeat;
-    width:100%;
-    height: 500px;
+  width:100%;
+  height: 500px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -39,8 +39,8 @@ h1 {
 
 .block2{
   background-repeat: no-repeat;
-    width:100%;
-    height: 250px;
+  width:100%;
+  height: 250px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -50,12 +50,12 @@ h1 {
 
 .block2{
   background-repeat: no-repeat;
-    width:100%;
-    height: 100px;
+  width:100%;
+  height: 100px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image: url(../shaman king.png);
+  background-image: url(../shaman_king.png);
 }
 
 
@@ -94,4 +94,11 @@ h2 {
 	background-color: gray;
 	transition: .3s;
 	color: #000;
+}
+a:hover{
+  text-shadow: 2px 2px red;
+}
+a {
+  color: #000 !important;
+  text-decoration: none
 }

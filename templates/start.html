@@ -2,20 +2,19 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Satrt</title>
+	<title>Start</title>
 	<link rel="stylesheet" href="../static/css/XD.css">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">  
 </head>
 
 <body>
-	    <h3><a href="http://127.0.0.1:5000/rules">
+	<button id="button" onclick="myFunction();">Up</button>
+	    <h1><a href="http://127.0.0.1:5000/rules" class="text">
 			Rules
 		</a>
-		</h3>
-{% for user in scoreboard %}
-<li>{{user.name}}:<b>{{user.score}}</b></li> 
-{% endfor %}
+		</h1>
+
 	<img src={{ url_for('static', filename="2.jpg")}}>
 	<div id="line"></div>
 	<h3 class="sponsered" >Sponsered by potato pc</h3>

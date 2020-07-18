@@ -5,7 +5,7 @@ window.onscroll = function(){
 }
 
 function topFunction(){
-	if (document.documentElement.scrollTop > 200){
+	if (document.documentElement.scrollTop > 100){
 		button.style.opacity = '1';
 		button.style.visibility = 'visible';
 	}else{

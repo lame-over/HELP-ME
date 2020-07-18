@@ -4,15 +4,16 @@ import random
 
 app = Flask(__name__)
 
-scoreboard = []
+#scoreboard = []
 
 def bot_r():
+    # бот
 	choose = ['rock', 'paper', 'scisors', 'lizard', 'spock']
 	return choose[random.randint(1,5)]
 
 def game(bot, player_choice):
     winner = 'YOU LOSE! ;-;'
-    
+    # логика игры
     if player_choice == 'rock' and (bot == 'scisors' or bot == 'lizard'):
         winner = 'YOU WIN!'
     elif player_choice == 'paper' and (bot == 'rock' or bot == 'spock'):
@@ -41,21 +42,25 @@ def hello():
 def rule():
     return render_template('rules1.html')
 
-app.route('/game/<name>')
-def hello(name):
-    for user in scoreboard:
-        user['name'] == name
-        user['choose'] == None
-        scoreboard.append({"name": name, "choose": none})
-    
-    return render_template('list.html', scoreboard=scoreboard)
+#@app.route('/game/<name>')
+#def hell(name):
+#    user_exist = False
+#    for user in scoreboard:
+#        user_exist = True
+#        user['name'] == name
+#       user['choose'] == None
+#    if not user_exist:
+#       scoreboard.append({"name": name, "choose": None})
+#    
+#    return render_template('list.html', scoreboard=scoreboard)
 
-#@app.route("/game/<choose>")
-#def end(choose):
-#    player_choice = choose.lower()
-#    bot = bot_r()
-#    winner = game(bot, player_choice)
-#    return render_template("ending.html", users=["sublime text 3", "visual studio"], winner=winner, player_choice=player_choice, bot=bot)
-	
+@app.route("/game/<choose>")
+def end(choose):
+    player_choice = choose.lower()
+    bot = bot_r()
+    winner = game(bot, player_choice)
+    # Вывод попедителя
+    return render_template("ending.html", users=["sublime text 3", "visual studio"], winner=winner, player_choice=player_choice, bot=bot)
+
 if __name__ == "__main__":
     app.run()
